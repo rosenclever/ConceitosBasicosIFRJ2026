@@ -4,8 +4,16 @@ do
 { 
     Console.WriteLine("Nesse instante, surge das nebulosas profundezas do fim do mundo\n um ser horrendo, com 10 cabeças e soprando labaredas de fogo sem fim...");
     Console.WriteLine("Jogue o D10 para ação do herói (0 sai):");
-    acao = Convert.ToInt32(Console.ReadLine());
-    if(acao == 0)
+    try
+    {
+        acao = Convert.ToInt32(Console.ReadLine());
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Entrada inválida! Por favor, informe um número entre 0 e 10.");
+        continue; 
+    }
+    if (acao == 0)
     {
         break;
     }
