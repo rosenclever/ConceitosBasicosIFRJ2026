@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int acao;
+int acao=0;
 do
 { 
     Console.WriteLine("Nesse instante, surge das nebulosas profundezas do fim do mundo\n um ser horrendo, com 10 cabeças e soprando labaredas de fogo sem fim...");
